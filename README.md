@@ -26,7 +26,7 @@
 ## 📊 Отчётность (Allure)
 
 - Для визуализации результатов тестирования в проекте настроен **Allure Framework**.
-- После запуска `mvn clean test` отчёт автоматически генерируется в директории `target/allure-results`. Для просмотра выполните: 'bash mvn allure:serve'
+- После запуска `mvn clean test` отчёт автоматически генерируется в директории `target/allure-results`. Для просмотра выполните: 'mvn allure:serve'
 
 ---
 
