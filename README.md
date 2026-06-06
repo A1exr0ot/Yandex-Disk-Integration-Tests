@@ -44,46 +44,39 @@
 		
 ## ⚙️ Установка и настройка
 
-1. Клонирование репозитория
+1. Клонирование репозитория:
   - bash git clone https://github.com/A1exr0ot/Yandex-Disk-Integration-Tests
   - cd yandex-disk-api-tests
-   
 
-2. Получение OAuth-токена Яндекс.Диска
+2. Получение OAuth-токена Яндекс.Диска:
   - Перейдите на страницу разработчика OAuth.
   - Нажмите «Создать приложение».
   - Укажите имя и выберите доступ к Яндекс.Диску (галочка Яндекс.Диск REST API).
   - После создания нажмите «Показать токен» и скопируйте access_token.
 
+3. Настройка переменной окружения:
+  - Требование: переменная YANDEX_DISK_TOKEN должна быть доступна OS или заданна в IntelliJ IDEA (Run -> Debug Configuration).
+  - Системная переменная ОС Windows(cmd): setx YANDEX_DISK_TOKEN "ваш_токен" (после этого перезапустите OS)
+  - Linux/macOS(bash): export YANDEX_DISK_TOKEN="ваш_токен" (добавьте в ~/.bashrc или ~/.zshrc для постоянного использования)
 
-3. Настройка переменной окружения
-Требование: переменная YANDEX_DISK_TOKEN должна быть доступна в системе и в IntelliJ IDEA.
+4. Настройка в IntelliJ IDEA:
+  - Откройте проект.
+  - Run → Edit Configurations.
+  - Выберите конфигурацию JUnit (или создайте новую).
+  - В поле Environment variables нажмите ... и добавьте: YANDEX_DISK_TOKEN=ваш_токен.
+  - Примените изменения.
 
-Системная переменная ОС
-Windows(cmd): setx YANDEX_DISK_TOKEN "ваш_токен"
-(после этого перезапустите OS)
+5. Проверка:
+  - echo %YANDEX_DISK_TOKEN%    # Windows (cmd)
+  - echo $YANDEX_DISK_TOKEN     # Linux/macOS (bash)
 
-Linux/macOS(bash): export YANDEX_DISK_TOKEN="ваш_токен"
-(добавьте в ~/.bashrc или ~/.zshrc для постоянного использования)
+6. Запуск тестов:
+  - Через Maven (терминал): mvn clean test
+  - Через IDEA: Нажмите зелёную кнопку рядом с классом YandexDiskApiTest или используйте Ctrl+Shift+F10.
 
-Настройка в IntelliJ IDEA
-Откройте проект.
-Run → Edit Configurations.
-Выберите конфигурацию JUnit (или создайте новую).
-В поле Environment variables нажмите ... и добавьте: YANDEX_DISK_TOKEN=ваш_токен
-Примените изменения.
-
-Проверка:
-echo %YANDEX_DISK_TOKEN%    # Windows (cmd)
-echo $YANDEX_DISK_TOKEN     # Linux/macOS (bash)
-
-4. Запуск тестов
-Через Maven (терминал): mvn clean test
-Через IDEA: Нажмите зелёную кнопку рядом с классом YandexDiskApiTest или используйте Ctrl+Shift+F10.
-
-Пример успешного вывода:
-[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
-[INFO] BUILD SUCCESS
+7. Пример успешного вывода:
+  - [INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0
+  - [INFO] BUILD SUCCESS
 
 ---
 
