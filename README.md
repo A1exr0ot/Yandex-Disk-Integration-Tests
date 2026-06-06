@@ -51,25 +51,6 @@ Allure – отчёты
 Maven – сборка и зависимости
 
 ---
-
-## 📁 Структура проекта
-
-Yandex-disk-Integration-test/
-├── pom.xml
-├── README.md
-├── images/
-│ ├── allure-overview.png
-│ └── token-idea-config.png
-└── src/
-├── main/
-│ └── java/ru/tests/yadisk/
-│ └── YDClient.java
-└── test/
-└── java/ru/tests/yadisk/
-└── YDAPITest.java
-
-
----
 		
 ## ⚙️ Установка и настройка
 
@@ -153,3 +134,13 @@ Allure-шаги (@Step) и вложения
 Проект предоставлен для демонстрации навыков автоматизации тестирования.
 Автор: [Кораблев Александр]
 GitHub: https://github.com/A1exr0ot
+
+Идентификатор приложения. Используйте его в запросах для получения OAuth-токена | ClientID:      30c1619d79514e11973fd5b71f4ac908
+
+Секретный ключ, которым будет подписан jwt-токен с информацией о пользователе   | Client secret: 68b6c25d33614a3b96777d1c669faf95
+
+https://oauth.yandex.ru/authorize?response_type=token&client_id=30c1619d79514e11973fd5b71f4ac908
+
+Token: y0__wgBEOHP4PEIGN2WQyC1z87pFzDkz-DxCJY_z3K5LD3waOfIGcLYVPLaP3W0
+
+Token: y0__wgBEOHP4PEIGN2WQyD1l93pFzDkz-DxCJZi5p77OK6P5uTbGiuPUBCR51_g
