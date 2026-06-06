@@ -25,10 +25,8 @@
 
 ## 📊 Отчётность (Allure)
 
-Для визуализации результатов тестирования в проекте настроен **Allure Framework**. Пример отчёта:
-![Allure Report Overview](images/allure-overview.png)
-*(В отчёте отображаются пройденные тесты, время выполнения, тренды, категории, окружение и исполнитель – Maven.)*
-После запуска `mvn clean test` отчёт автоматически генерируется в директории `target/allure-results`. Для просмотра выполните: ```bash mvn allure:serve
+- Для визуализации результатов тестирования в проекте настроен **Allure Framework**.
+- После запуска `mvn clean test` отчёт автоматически генерируется в директории `target/allure-results`. Для просмотра выполните: ```bash mvn allure:serve
 
 ---
 
@@ -45,7 +43,7 @@
 ## ⚙️ Установка и настройка
 
 1. Клонирование репозитория:
-   - bash git clone https://github.com/A1exr0ot/Yandex-Disk-Integration-Tests
+   - bash git clone https://github.com/A1exr0ot/YD-APITests
    - cd yandex-disk-api-tests
 
 2. Получение OAuth-токена Яндекс.Диска:
