@@ -58,13 +58,15 @@ Yandex-disk-Integration-test/
 ├── pom.xml
 ├── README.md
 ├── images/
-│ ├── allure-overview.png
-│ └── token-idea-config.png
+│   ├── allure-overview.png
+│   └── token-idea-config.png
 └── src/
-├── main/
-│ └── java/ru/tests/yadisk/
-│ └── YDClient.java
-└── test/
+    ├── main/
+    │   └── java/ru/tests/yadisk/
+    │       └── YDClient.java
+    └── test/
+        └── java/ru/tests/yadisk/
+            └── YDAPITest.java
 
 ---
 		
