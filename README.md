@@ -2,7 +2,8 @@
 
 Проект содержит набор автоматических тестов для проверки базовых операций с папками на Яндекс.Диске через REST API.
 
-**Тестовое задание**: Необходимо разработать пример проекта автотестов для сервиса Яндекс.Диска [https://yandex.ru/dev/disk/rest/](https://yandex.ru/dev/disk/rest/)
+
+**Тестовое задание и цель**: Разработать набор автоматических тестов, которые проверяют базовые операции с папками на Яндекс.Диске через REST API. Тесты охватывают методы GET, POST, PUT, DELETE и демонстрируют умение работать с HTTP-запросами, аутентификацией через OAuth-токен и написанием автотестов на Java с использованием JUnit 5. [https://yandex.ru/dev/disk/rest/](https://yandex.ru/dev/disk/rest/)
 
 **API**: [https://cloud-api.yandex.net/v1/disk](https://cloud-api.yandex.net/v1/disk)  
 **Документация**: [Яндекс.Диск REST API](https://yandex.ru/dev/disk/api/concepts/about-docpage/)  
