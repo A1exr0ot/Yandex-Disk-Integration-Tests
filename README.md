@@ -36,7 +36,7 @@
 
 - Java 11+ (встроенный java.net.http.HttpClient)
 - JUnit 5 (Jupiter)
-- Jackson Databind – парсинг JSON
+- Jackson – парсинг JSON
 - Allure – отчёты
 - Maven – сборка и зависимости
 
